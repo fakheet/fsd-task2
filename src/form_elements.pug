@@ -1,7 +1,18 @@
+mixin text-input(title, hint)
+    .text-input
+        h3= title
+        input(type="text", name= title, class = "text-input__input", placeholder= hint)
+
 doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Form Elements
+        link(rel="stylesheet", href="./styles.scss")
+        link(rel="stylesheet", href="./fonts.scss")
     body
+        +text-input("Text Field", "Email")
+        +text-input("Text Field", "This is pretty awesome")
+
+        +text-input("Masked Text Field", "ДД.ММ.ГГГГ")

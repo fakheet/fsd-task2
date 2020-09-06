@@ -1,5 +1,6 @@
 $background: #FFFFFF;
 $dark-shade: #1F2041;
+$dark25: #1F204140;
 $green: #BC9CFF;
 $purple: #6FCF97; 
 
@@ -35,6 +36,7 @@ h3 {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
+    margin: 4px 0px;
 }
 
 .cnt-column {
@@ -76,4 +78,30 @@ h3 {
     font-family: "Montserrat";
     font-weight: normal;
     color: #1F204140;
+}
+
+.text-input__input {
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+    ::placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $dark25
+    }
+}
+
+::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark25
 }

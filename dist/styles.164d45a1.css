@@ -1,0 +1,75 @@
+body {
+  box-sizing: border-box;
+  padding: 22px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1F2041;
+  background: #FFFFFF;
+}
+
+h1 {
+  font-family: "Quicksand";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h2 {
+  font-family: "Quicksand";
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.cnt-column {
+  padding-left: 120px;
+  padding-top: 60px;
+  float: left;
+  width: 50%;
+}
+
+.cnt-clmn-r {
+  padding-left: 320px;
+  padding-top: 47px;
+  float: left;
+  width: 50%;
+}
+
+.color-flex {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.color-rect {
+  width: 70px;
+  height: 70px;
+  left: 150px;
+  top: 145px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.color-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.hint {
+  text-align: right;
+  margin-right: 40px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  color: #1F204140;
+}
+
+/*# sourceMappingURL=/styles.164d45a1.css.map */

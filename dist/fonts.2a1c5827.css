@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("/Quicksand-Bold.f23effaa.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("/Quicksand-Regular.ebf4da6a.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Montserrat-Regular.44240835.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Montserrat-Bold.361393eb.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=/fonts.2a1c5827.css.map */

@@ -1,7 +1,13 @@
 mixin text-input(title, hint)
     .text-input
-        h3= title
-        input(type="text", name= title, class = "text-input__input", placeholder= hint)
+        form
+            h3= title
+            input(type="text", name= title, class = "text-input__input", placeholder= hint)
+
+mixin dropdown(title)
+    .dropdown
+        h3= title 
+        select(name="select", class = "text-input__input")
 
 doctype html
 html(lang="en")
@@ -12,7 +18,8 @@ html(lang="en")
         link(rel="stylesheet", href="./styles.scss")
         link(rel="stylesheet", href="./fonts.scss")
     body
-        +text-input("Text Field", "Email")
-        +text-input("Text Field", "This is pretty awesome")
-
-        +text-input("Masked Text Field", "ДД.ММ.ГГГГ")
+        div.form-grid
+            +text-input("Text Field", "Email")
+            +text-input("Text Field", "This is pretty awesome")
+            +dropdown("Dropdown")
+            +text-input("Masked Text Field", "ДД.ММ.ГГГГ")

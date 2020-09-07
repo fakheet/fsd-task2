@@ -1,6 +1,9 @@
 $background: #FFFFFF;
-$dark-shade: #1F2041;
+$dark: #1F2041;
+$dark75 : #1F2041C0;
+$dark50 : #1F204180;
 $dark25: #1F204140;
+$dark5  : #1F20410D;
 $green: #BC9CFF;
 $purple: #6FCF97; 
 
@@ -13,7 +16,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: $dark-shade;
+    color: $dark;
     background: $background;
 }
 
@@ -87,14 +90,6 @@ h3 {
     border-radius: 4px;
     width: 320px;
     height: 44px;
-    ::placeholder {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 18px;
-        color: $dark25
-    }
 }
 
 ::placeholder {
@@ -104,4 +99,8 @@ h3 {
     font-size: 14px;
     line-height: 18px;
     color: $dark25
+}
+
+.form-grid {
+    display: grid;
 }

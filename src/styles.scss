@@ -1,4 +1,4 @@
-$background: #FFFFFF;
+$white: #FFFFFF;
 $dark: #1F2041;
 $dark75 : #1F2041C0;
 $dark50 : #1F204180;
@@ -17,7 +17,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: $dark;
-    background: $background;
+    background: $white;
 }
 
 h1 {
@@ -80,19 +80,19 @@ h3 {
     margin-right: 40px;
     font-family: "Montserrat";
     font-weight: normal;
-    color: #1F204140;
+    color: $dark25;
 }
 
 .text-input__input {
-    background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    background: $white;
+    border: 1px solid $dark25;
     box-sizing: border-box;
     border-radius: 4px;
     width: 320px;
     height: 44px;
 }
 
-::placeholder {
+.text-input__input::placeholder {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -101,6 +101,42 @@ h3 {
     color: $dark25
 }
 
+.text-input__input:hover {
+    background: $white;
+    border: 1px solid $dark50;
+    border-radius: 4px;
+}
+
+.text-input__input:focus {
+    background: $white;
+    border: 1px solid $dark50;
+    border-radius: 4px;
+}
+
 .form-grid {
     display: grid;
+}
+
+*:focus {
+    outline: none;
+}
+
+select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+.select-arrow {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    color: $dark50;
+    // transform: rotate(-180deg);
 }

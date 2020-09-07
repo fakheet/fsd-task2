@@ -75,14 +75,14 @@ h3 {
 
 .text-input__input {
   background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid #1F204140;
   box-sizing: border-box;
   border-radius: 4px;
   width: 320px;
   height: 44px;
 }
 
-::placeholder {
+.text-input__input::placeholder {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -91,8 +91,45 @@ h3 {
   color: #1F204140;
 }
 
+.text-input__input:hover {
+  background: #FFFFFF;
+  border: 1px solid #1F204180;
+  border-radius: 4px;
+}
+
+.text-input__input:focus {
+  background: #FFFFFF;
+  border: 1px solid #1F204180;
+  border-radius: 4px;
+}
+
 .form-grid {
   display: grid;
+}
+
+*:focus {
+  outline: none;
+}
+
+select {
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
+
+.select-arrow {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  color: #1F204180;
 }
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */

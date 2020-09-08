@@ -85,11 +85,13 @@ h3 {
 
 .text-input__input {
     background: $white;
+    color: $dark50;
     border: 1px solid $dark25;
     box-sizing: border-box;
     border-radius: 4px;
     width: 320px;
     height: 44px;
+    padding-left: 15px;
 }
 
 .text-input__input::placeholder {
@@ -122,12 +124,16 @@ h3 {
 }
 
 select {
-    -moz-appearance:none; /* Firefox */
-    -webkit-appearance:none; /* Safari and Chrome */
+    display: flex;
+    -moz-appearance:none;
+    -webkit-appearance:none;
     appearance:none;
 }
 
 .select-arrow {
+    background: $dark25;
+    position: relative;
+    right: 44px;
     display: flex;
     width: 44px;
     height: 44px;
@@ -139,4 +145,10 @@ select {
     align-items: center;
     color: $dark50;
     // transform: rotate(-180deg);
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
 }

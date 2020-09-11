@@ -1,7 +1,11 @@
+*:focus {
+  outline: none;
+}
+
 body {
   box-sizing: border-box;
   padding: 22px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -11,14 +15,14 @@ body {
 }
 
 h1 {
-  font-family: "Quicksand";
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
 }
 
 h2 {
-  font-family: "Quicksand";
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -29,7 +33,14 @@ h3 {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  margin: 4px 0px;
+  margin: 5px 0;
+}
+
+select {
+  display: flex;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .cnt-column {
@@ -68,7 +79,7 @@ h3 {
 .hint {
   text-align: right;
   margin-right: 40px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   color: #1F204140;
 }
@@ -85,7 +96,7 @@ h3 {
 }
 
 .text-input__input::placeholder {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -109,25 +120,13 @@ h3 {
   display: grid;
 }
 
-*:focus {
-  outline: none;
-}
-
-select {
-  display: flex;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
 .select-arrow {
-  background: #1F204140;
   position: relative;
   right: 44px;
   display: flex;
   width: 44px;
   height: 44px;
-  font-family: Material Icons;
+  font-family: Material Icons, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -139,7 +138,65 @@ select {
 .horizontal {
   display: flex;
   flex-direction: row;
-  margin: 0px;
+  margin: 0;
+}
+
+.input-checkbox {
+  overflow: hidden;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox:hover input ~ .checkmark {
+  border: 1px solid #1F204180;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox input:checked ~ .checkmark {
+  border: 1px solid #BC9CFF;
+}
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 8px;
+  border: solid #8BA4F9;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #1F204140;
+  border-radius: 4px;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */
